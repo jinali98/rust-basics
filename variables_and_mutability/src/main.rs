@@ -1,5 +1,5 @@
 fn main() {
-    mutating variables
+    // mutating variables
     let mut x = 5;
     println!("value of x is : {} ", x);
     x = 6;
@@ -29,9 +29,19 @@ fn main() {
   let mut z: u32 = 1;
   {
     let mut z = z;
-    // this mutate the newly created x varible. not the initial x 
+    // this mutate the newly created z varible. not the initial z 
+   // The statement z += 2 only affects the shadowed z inside the inner curly braces, 
+   //not the outer z
     z += 2;
     println!("{z}"); // 3
   }
   println!("{z}"); // 1
+
+
+  //  Floating points
+
+  let f64_number = 4.585;
+  let f32_number: f32 = 4.558;
+
+
 }
